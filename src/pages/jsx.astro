@@ -1,0 +1,25 @@
+---
+const posts = [
+  {
+    title: "Post 1",
+    body: "This is my first post",
+  },
+  {
+    title: "Post 2",
+    body: "This is my second post",
+  },
+  {
+    title: "Post 3",
+    body: "This is my third post",
+  },
+];
+---
+
+{
+  posts.map((post) => (
+    <>
+      <h1>{post.title}</h1>
+      <p>{post.body}</p>
+    </>
+  ))
+}
